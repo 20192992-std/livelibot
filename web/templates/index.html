@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Livelibot</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+</head>
+<body>
+<main class="app">
+  <header>
+    <div class="who">
+      <h1>Livelibot</h1>
+    </div>
+  </header>
+
+  <section id="log" aria-live="polite" aria-label="Conversation"></section>
+
+  <div class="composer">
+    <input id="text" type="text" placeholder="Type your message" autocomplete="off" aria-label="Message">
+    <button class="send" id="send" type="button" disabled>Send</button>
+  </div>
+</main>
+
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

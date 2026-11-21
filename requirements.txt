@@ -1,0 +1,18 @@
+# RAG and embeddings
+langchain
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+
+# Vector database
+chromadb
+
+# LLM API requests
+requests
+
+# Web application
+flask
+
+# Document processing
+pypdf
+python-docx
